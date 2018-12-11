@@ -1,0 +1,4 @@
+Connect-AzureRMAccount # This will open a Web Authentication Prompt
+
+Get-AzureRMSubscription # This will list the Subscriptions you have permissions to
+Select-AzureRMSubscription -Subscriptions <"Name of Subscription"> # This will change focus to the named Subscription
