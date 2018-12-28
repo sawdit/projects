@@ -1,0 +1,132 @@
+{
+    'value': [
+        {
+        'properties': {
+            'vmId': 'd89a149e-62ab-428c-bad6-6fc9e35777c1', 
+            'hardwareProfile': {
+                'vmSize': 'Standard_DS14_v2'
+                }, 
+            'storageProfile': {
+                'imageReference': {
+                    'publisher': 'MicrosoftWindowsServer', 
+                    'offer': 'WindowsServer', 
+                    'sku': '2012-R2-Datacenter', 
+                    'version': 'latest'
+                    }, 
+                'osDisk': {
+                    'osType': 'Windows', 
+                    'name': 'BI-QA-DB01_BI-QA-DB01', 
+                    'createOption': 'FromImage', 
+                    'caching': 'ReadWrite', 
+                    'managedDisk': {
+                        'storageAccountType': 'Premium_LRS', 
+                        'id': '/subscriptions/ec057239-e4b9-4f3a-bb91-769e0d722e04/resourceGroups/ACCELERATOR/providers/Microsoft.Compute/disks/BI-QA-DB01_BI-QA-DB01'
+                        }, 
+                    'diskSizeGB': 1023
+                    }, 
+                'dataDisks': [
+                    {
+                        'lun': 5, 
+                        'name': 'BI-QA-DB01-Database-Backup', 
+                        'createOption': 'Attach', 
+                        'caching': 'ReadWrite', 
+                        'managedDisk': {
+                            'storageAccountType': 'Standard_LRS', 
+                            'id': '/subscriptions/ec057239-e4b9-4f3a-bb91-769e0d722e04/resourceGroups/ACCELERATOR/providers/Microsoft.Compute/disks/BI-QA-DB01-Database-Backup'
+                            }, 
+                        'diskSizeGB': 1023
+                    }, 
+                    {
+                        'lun': 6, 
+                        'name': 'BI-QA-DB01-SQLDB-E', 
+                        'createOption': 'Attach', 
+                        'caching': 'ReadOnly', 
+                        'managedDisk': {
+                            'storageAccountType': 'Premium_LRS', 
+                            'id': '/subscriptions/ec057239-e4b9-4f3a-bb91-769e0d722e04/resourceGroups/ACCELERATOR/providers/Microsoft.Compute/disks/BI-QA-DB01-SQLDB-E'
+                            }, 
+                        'diskSizeGB': 1023
+                    }, 
+                    {
+                        'lun': 7, 
+                        'name': 'BI-QA-DB01-SQLLogs-F', 
+                        'createOption': 'Attach', 
+                        'caching': 'None', 
+                        'managedDisk': {
+                            'storageAccountType': 'Premium_LRS', 
+                            'id': '/subscriptions/ec057239-e4b9-4f3a-bb91-769e0d722e04/resourceGroups/ACCELERATOR/providers/Microsoft.Compute/disks/BI-QA-DB01-SQLLogs-F'
+                            }, 
+                        'diskSizeGB': 512
+                    }, 
+                    {
+                        'lun': 8, 
+                        'name': 'BI-QA-DB01-TempDB-G', 
+                        'createOption': 'Attach', 
+                        'caching': 'ReadOnly', 
+                        'managedDisk': {
+                            'storageAccountType': 'Premium_LRS', 
+                            'id': '/subscriptions/ec057239-e4b9-4f3a-bb91-769e0d722e04/resourceGroups/ACCELERATOR/providers/Microsoft.Compute/disks/BI-QA-DB01-TempDB-G'
+                            }, 
+                        'diskSizeGB': 512
+                    }, 
+                    {
+                        'lun': 9, 
+                        'name': 'H-Drive', 
+                        'createOption': 'Attach', 
+                        'caching': 'ReadWrite', 
+                        'managedDisk': {
+                            'storageAccountType': 'Premium_LRS', 
+                            'id': '/subscriptions/ec057239-e4b9-4f3a-bb91-769e0d722e04/resourceGroups/ACCELERATOR/providers/Microsoft.Compute/disks/H-Drive'
+                            }, 
+                        'diskSizeGB': 500
+                    }
+                        ]
+                }, 
+            'osProfile': {
+                'computerName': 'BI-QA-DB01', 
+                'adminUsername': 'cloudadmin', 
+                'windowsConfiguration': {
+                    'provisionVMAgent': True, 
+                    'enableAutomaticUpdates': True
+                    }, 
+                'secrets': []
+                }, 
+            'networkProfile': {
+                'networkInterfaces': [
+                    {
+                        'id': '/subscriptions/ec057239-e4b9-4f3a-bb91-769e0d722e04/resourceGroups/Accelerator/providers/Microsoft.Network/networkInterfaces/bi-qa-db01577'
+                    }
+                ]
+                }, 
+            'diagnosticsProfile': {
+                'bootDiagnostics': {
+                    'enabled': True, 
+                    'storageUri': 'https://strstanprodnediagnostics.blob.core.windows.net/'
+                    }
+                }, 
+            'licenseType': 'Windows_Server', 
+            'provisioningState': 'Succeeded'
+        }, 
+        'resources': [
+            {
+                'id': '/subscriptions/ec057239-e4b9-4f3a-bb91-769e0d722e04/resourceGroups/ACCELERATOR/providers/Microsoft.Compute/virtualMachines/BI-QA-DB01/extensions/AzureNetworkWatcherExtension'
+            }, 
+            {
+                'id': '/subscriptions/ec057239-e4b9-4f3a-bb91-769e0d722e04/resourceGroups/ACCELERATOR/providers/Microsoft.Compute/virtualMachines/BI-QA-DB01/extensions/MicrosoftMonitoringAgent'
+            }
+            ], 
+        'type': 'Microsoft.Compute/virtualMachines',
+        'location': 'northeurope', 
+        'tags': {
+            'Department': '', 
+            'Environment': '', 
+            'Servicename': ''
+            }, 
+        'id':'/subscriptions/ec057239-e4b9-4f3a-bb91-769e0d722e04/resourceGroups/ACCELERATOR/providers/Microsoft.Compute/virtualMachines/BI-QA-DB01',
+        'name': 'BI-QA-DB01'
+        }, 
+   ], 
+   
+   'nextLink': 'https://management.azure.com/subscriptions/ec057239-e4b9-4f3a-bb91-769e0d722e04/providers/Microsoft.Compute/virtualMachines?api-version=2018-06-01&%24skiptoken=lY5dT4MwGIV%2fi8R499KWdnwlizGTzAvZCOruC7y4BmlJW4hx2X8X%2fQe7O09ycs5zCTR%2b%2b1elBxfkl%2bBwrN9fio%2f6WBVBHpy9n1xOyCi1%2fMQRtQ%2flz2wxbM2YC8GJmxvXWjV5ZbQj2NJNEvEMUDQZiJ5LaJqMQRJnSLskipAKMlmzqA6tI6VqrXGm9%2bHOjNPskSzK%2bll%2blbI9K43uUU4KlrW6rm8jylKgMVD2cO%2bG9dIMqLdUJJzHrIdmE6UgOoGQpR0H3rEmTSgVLI3vyNvtmjU6M9sW99bMkyP1Hqr6%2bAxsV%2f2FpxMcCsrIqXTkH6uVV7Xgev0F'
+
+}
