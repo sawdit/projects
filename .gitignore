@@ -1,2 +1,2 @@
 # ignore an entire directory
-\Microsoft\AzureRestAPI\pythonAzureFlask-01
+/Microsoft/AzureRestAPI/pythonAzureFlask-01/
