@@ -1,0 +1,54 @@
+Code Management
+1. Git
+2. Git Hub
+
+API Management/Documentation
+1. Swagger
+
+Frontends
+1. HTML
+2. CSS
+3. JavaScript
+
+Frontend Frameworks
+1. Angular
+2. React
+3. Vue
+4. Backbone
+5. Ember
+
+Package Managers
+1. NPM
+2. PIP
+3. Bower
+
+JavaScript Compilers
+1. Babel
+
+Syntax Extensions
+1. JSX(React) -> JavaScript 
+
+Dependency Bundlers
+
+Module Bundlers
+1. Webpack
+
+Build System
+1. Gulp
+
+Task Runners
+1. Grunt
+
+Backends
+1. PHP
+2. JavaScript
+3. Python
+4. Ruby
+
+Frameworks
+1. Flask - Python
+2. Django - Python
+3. Node & Express - JavaScript
+4. 
+
+Databases

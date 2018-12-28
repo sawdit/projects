@@ -1,0 +1,7 @@
+# Using Azure Blob Storage to Create a Serverless Web APP
+
+Users or client applications can access objects in Blob storage via HTTP/HTTPS, from anywhere in the world. 
+Objects in Blob storage are accessible via the Azure Storage REST API, Azure PowerShell, Azure CLI, or an Azure Storage client library.
+Client libraries are available for a variety of languages, including .NET, Java, Node.js, Python, Go, PHP, and Ruby.
+
+https://pysawdit@pythonappv1.scm.azurewebsites.net/pythonAppV1.git
