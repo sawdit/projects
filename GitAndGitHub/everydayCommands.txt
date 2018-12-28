@@ -1,0 +1,2 @@
+git rm -r --cached NameOfFolder # I had a folder showing on GitHub and in VS Code that was stuck in a "Changed" state. I used the following command to remove it from the Git 
+                                # Cache as I wasn't using it.
