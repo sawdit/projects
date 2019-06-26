@@ -1,5 +1,0 @@
-Connect-AzureRmAccount
-
-Get-AzureRmSubscription
-
-Select-AzureRmSubscription -Subscription "Named Subscription"
