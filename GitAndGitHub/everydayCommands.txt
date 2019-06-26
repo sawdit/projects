@@ -1,2 +1,29 @@
-git rm -r --cached NameOfFolder # I had a folder showing on GitHub and in VS Code that was stuck in a "Changed" state. I used the following command to remove it from the Git 
-                                # Cache as I wasn't using it.
+# Configure Git
+
+git config --global user.name "Your name"
+git config --global user.email "yourname@provider.com"
+
+# View Git Configuration
+
+git config --list
+
+# Initializing a Git Repository - This will create a hidden .git directory in the current folder
+
+git init
+
+# Link the Local Repo to the Remote Repo
+
+git remote add origin <repo url>
+
+# If the Remote Repo already has data
+
+git pull
+
+# If the Remote Repo already has data in it you can combine the above 3 steps as follows
+
+git clone <repo url> <local folder>
+
+# You can check if you are tracking the Remote Repo with
+
+git remote -v
+
